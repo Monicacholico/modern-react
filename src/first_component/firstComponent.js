@@ -11,3 +11,14 @@ class Hello extends React.Component {
 }
 
 ReactDOM.render(<Hello />, document.getElementById('root1'));
+
+
+// function Hello() {
+// 	return (
+// 		<div>
+// 			<h1>Hello there!</h1>
+// 			<h1>Hello there!</h1>
+// 			<h1>Hello there!</h1>
+// 		</div>
+// 	)
+// }
