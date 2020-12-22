@@ -1,5 +1,3 @@
-
-
 function choice(items) {
     let randomItem = Math.floor(Math.random() * items.length);
     return items[randomItem];
@@ -13,4 +11,3 @@ return items.filter( item => {
  })
 }
 
-export {choice, remove};
