@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Clicker.css'
 
 class Clicker extends Component {
     state = {
@@ -19,7 +20,8 @@ class Clicker extends Component {
         return (
             <div>
                 <h1>Number is {this.state.randomNumber}</h1>
-                <button onClick={this.randNumber}>Click Me!!!</button>
+                <h2 className="off">YOU WIN!!</h2>
+                <button className="on" onClick={this.randNumber}>Random Number</button>
             </div>
         )
     }
