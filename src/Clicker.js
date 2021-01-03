@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Clicker.css'
+
 
 class Clicker extends Component {
     state = {
@@ -12,16 +12,15 @@ class Clicker extends Component {
         let rand = Math.floor(Math.random() * arrofNums.length);
         let resRand = arrofNums[rand];
         this.setState({randomNumber: resRand});
-        if(resRand === 10) {
-            console.log('You win');
-        }
+
     }
     render() {
+        let winner = <h2>YOU WIN!!!</h2>
         return (
             <div>
                 <h1>Number is {this.state.randomNumber}</h1>
-                <h2 className="off">YOU WIN!!</h2>
-                <button className="on" onClick={this.randNumber}>Random Number</button>
+                {this.state.randomNumber === 10 ? winner : ''}
+                {this.state.randomNumber !== 10 ? <button className="on" onClick={this.randNumber}>Random Number</button> : ''}
             </div>
         )
     }
