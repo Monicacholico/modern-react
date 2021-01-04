@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 
 class Clicker extends Component {
     state = {
-        displayButton: true,
-        message: 'YOU WIN',
         randomNumber: 0
     }
     randNumber = () => {
@@ -19,8 +17,14 @@ class Clicker extends Component {
         return (
             <div>
                 <h1>Number is {this.state.randomNumber}</h1>
-                {this.state.randomNumber === 10 ? winner : ''}
-                {this.state.randomNumber !== 10 ? <button className="on" onClick={this.randNumber}>Random Number</button> : ''}
+                {this.state.randomNumber === 10 
+                ? winner : 
+                <button 
+                className="on" 
+                onClick={this.randNumber}>
+                Random Number
+                </button>}
+                {/* {this.state.randomNumber !== 10 ? <button className="on" onClick={this.randNumber}>Random Number</button> : ''} */}
             </div>
         )
     }
