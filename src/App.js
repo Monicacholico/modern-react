@@ -5,6 +5,7 @@ import Rando from './Rando';
 import BrokenClick from './BrokenClick';
 import './App.css'
 import Clicker from './Clicker';
+import ScoreKeeper from './Scorekeeper';
 
 
 class App extends Component {
@@ -14,9 +15,10 @@ class App extends Component {
             <div className="App">
                 {/* <Game color="purple"/> */}
                 {/* <Demo animal="Bobcat" food="Pineapple"/> */}
-                <Rando maxNum={7}/>
+                {/* <Rando maxNum={7}/> */}
                 {/* <BrokenClick/> */}
-                <Clicker/>
+                {/* <Clicker/> */}
+                <ScoreKeeper/>
             </div>
         )
     }
