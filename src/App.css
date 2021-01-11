@@ -1,0 +1,13 @@
+.App-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+}
+.App-icon-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3em;
+}
+
+i {
+    padding: 2em;
+}

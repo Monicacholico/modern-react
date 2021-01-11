@@ -6,6 +6,7 @@ import BrokenClick from './BrokenClick';
 import './App.css'
 import Clicker from './Clicker';
 import ScoreKeeper from './Scorekeeper';
+import IconList from './IconList';
 
 
 class App extends Component {
@@ -18,7 +19,8 @@ class App extends Component {
                 {/* <Rando maxNum={7}/> */}
                 {/* <BrokenClick/> */}
                 {/* <Clicker/> */}
-                <ScoreKeeper/>
+                {/* <ScoreKeeper/> */}
+                <IconList/>
             </div>
         )
     }
