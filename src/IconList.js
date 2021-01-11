@@ -29,6 +29,7 @@ class IconList extends Component {
     //     icons.push(newIcon);
     //     this.setState({icons: icons});
     // }
+    
     addIcon = () => {
         let idx = Math.floor(Math.random() * this.props.options.length);
         let newIcon = this.props.options[idx];
