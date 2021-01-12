@@ -7,6 +7,7 @@ import './App.css'
 import Clicker from './Clicker';
 import ScoreKeeper from './Scorekeeper';
 import IconList from './IconList';
+import Lottery from './Lottery';
 
 
 
@@ -21,7 +22,8 @@ class App extends Component {
                 {/* <BrokenClick/> */}
                 {/* <Clicker/> */}
                 {/* <ScoreKeeper/> */}
-                <IconList/>
+                {/* <IconList/> */}
+                <Lottery/>
             </div>
         )
     }
