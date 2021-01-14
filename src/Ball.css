@@ -1,0 +1,10 @@
+.Ball-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.Ball {
+    margin: 3em;
+    padding: 2em;
+    background-color: rosybrown;
+    border-radius: 50%;
+}

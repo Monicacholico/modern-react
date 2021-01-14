@@ -1,19 +1,29 @@
 import React, {Component} from 'react';
 
+import './App.css';
 import './Ball.css';
 
+
+// let arrNumbers4 = Array.from({length: 4}, () => Math.floor(Math.random() * 400));
+// let arrNumbers6 = Array.from({length: 6}, () => Math.floor(Math.random() * 400));
 class Ball extends Component {
+    // static defaulProps = {
+    //     numbers : [
+    //         arrNumbers4,
+    //         arrNumbers6 
+    //     ] 
+    // }
     render() {
-        let arrNumbers = Array.from({length: 4}, () => Math.floor(Math.random() * 400));
-        let ballNumbers = arrNumbers.join(' ');
-        let eachBall = ballNumbers.map(ballNumber => <h1 className="Ball">{ballNumber}</h1>)
-        let randNumber = Math.floor(Math.random * 40) + 1;
-        console.log(randNumber);
+        // console.log(this.props)
+        let arrNumbers4 = Array.from({length: 4}, () => Math.floor(Math.random() * 400));
+        let arrNumbers6 = Array.from({length: 6}, () => Math.floor(Math.random() * 400));
+        let fourBalls = arrNumbers4.map(arrNumber => <h1 className="Ball">{arrNumber}</h1>)
+        let sixBalls = arrNumbers6.map(arrNumber => <h1 className="Ball">{arrNumber}</h1>)
         return (
-            <h2>
-                {/* {ballNumbers.map(ballNumber => <div className="Ball">{ballNumber}</div>)} */}
-                {eachBall}
-            </h2>
+            <div className="Ball-wrapper">
+                {fourBalls}
+                {/* {sixBalls} */}
+            </div>
         )
     }
 }
