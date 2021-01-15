@@ -1,6 +1,7 @@
 .App-wrapper {
     display: flex;
     flex-flow: column wrap;
+
 }
 .App-icon-wrapper {
     display: flex;
