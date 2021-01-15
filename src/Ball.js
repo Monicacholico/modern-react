@@ -10,8 +10,8 @@ class Ball extends Component {
     // static defaulProps = {
     //     numbers : [
     //         arrNumbers4,
-    //         arrNumbers6 
-    //     ] 
+    //         arrNumbers6
+    //     ]
     // }
     render() {
         // console.log(this.props)
@@ -20,9 +20,10 @@ class Ball extends Component {
         let fourBalls = arrNumbers4.map(arrNumber => <h1 className="Ball">{arrNumber}</h1>)
         let sixBalls = arrNumbers6.map(arrNumber => <h1 className="Ball">{arrNumber}</h1>)
         return (
-            <div className="Ball-wrapper">
-                {fourBalls}
+            <div className="Ball">
+                {/* {fourBalls} */}
                 {/* {sixBalls} */}
+                {this.props.num}
             </div>
         )
     }
