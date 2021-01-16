@@ -23,7 +23,10 @@ class App extends Component {
                 {/* <Clicker/> */}
                 {/* <ScoreKeeper/> */}
                 {/* <IconList/> */}
-                <Lottery/>
+                <Lottery
+                title={'Lotto'}
+                numOfBalls={2}
+                />
             </div>
         )
     }
