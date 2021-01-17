@@ -27,7 +27,7 @@ class Lottery extends Component {
                             />
                     </div>
                 </div> */}
-                <section>
+                <section className="Lottery-wrapper">
                     <h1>{this.props.title}</h1>
                     <div>
                         {this.state.nums.map(n => <Ball num={n}/>)}

@@ -25,7 +25,7 @@ class App extends Component {
                 {/* <IconList/> */}
                 <Lottery
                 title={'Lotto'}
-                numOfBalls={2}
+                numOfBalls={4}
                 />
             </div>
         )

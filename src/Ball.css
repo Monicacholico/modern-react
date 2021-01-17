@@ -15,3 +15,6 @@
     margin: auto;
     text-align: center;
 }
+.Lottery-wrapper {
+    display: flex;
+}
