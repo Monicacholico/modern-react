@@ -34,7 +34,12 @@
     text-align: center;
 }
 
+
 .Ball-button-wrapper {
     display: flex;
     justify-content: center;
+
+.Lottery-wrapper {
+    display: flex;
+
 }

@@ -24,6 +24,7 @@ class App extends Component {
                 {/* <Clicker/> */}
                 {/* <ScoreKeeper/> */}
                 {/* <IconList/> */}
+
                 {/* <Ball num={17}/> */}
                 {/* <Lottery />
                 <Lottery title={'Mini Daily'} maxNum={40} maxBalls={4}/> */}

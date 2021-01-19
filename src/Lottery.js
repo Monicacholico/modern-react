@@ -31,6 +31,7 @@ class Lottery extends Component {
     render() {
         console.log(this.state)
         return (
+
             <section className='Lottery'>
                 <h1>{this.props.title}</h1>
                 <div className="Ball-wrapper">
@@ -38,6 +39,7 @@ class Lottery extends Component {
                 </div>
                 <button className="Lottery-button" onClick={this.handleClick}>Generate</button>
             </section>
+
         )
     }
 }
