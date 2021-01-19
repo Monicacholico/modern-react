@@ -4,14 +4,37 @@
     justify-content: center;
 }
 .Ball {
-    margin: 2em;
-    padding: 2em;
+    /* margin: .5em;
+    padding: 1em;
+    width: 1em;
+    height: 1em;;
     background-color: tomato;
     border-radius: 50%;
+    color: white;
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: bold; */
+    background-color: tomato;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    width: 3em;
+    height: 2.25em;
+    padding-top: 0.75em;
+    text-align: center;
+    margin-right: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+
 }
 
 .App-ball {
     min-width: 120vh;
     margin: auto;
     text-align: center;
+}
+
+.Ball-button-wrapper {
+    display: flex;
+    justify-content: center;
 }

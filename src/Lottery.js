@@ -1,40 +1,43 @@
 import React, {Component} from 'react';
 import Ball from './Ball';
 
+
+import './App.css';
 import './Ball.css';
+import './Lottery.css';
 
 class Lottery extends Component {
-    static defaulProps = {
-        title: 'This is the Title',
-        numOfBalls : 0,
-        maxNum : 0
+    static defaultProps = {
+        title: 'Lotto',
+        maxBalls: 6,
+        maxNum: 400
     }
+
     state = {
-        nums : Array.from({length: this.props.numOfBalls}, () => Math.floor(Math.random() * 400))
+        nums : Array.from({length: this.props.maxBalls}, () => Math.floor(Math.random() * this.props.maxNum) + 1)
     }
+
+    generate = () => {
+        this.setState(curState => ({
+            nums: curState.nums.map
+            (n => Math.floor(Math.random() * this.props.maxNum) + 1)
+        }))
+    }
+
+    handleClick = () => {
+        this.generate();
+    }
+
     render() {
-        console.log(this.state);
+        console.log(this.state)
         return (
-            <div className="App-wrapper">
-                {/* <div className="App-ball">
-                        <h1>Lotto 4</h1>
-                        <div className="Ball-wrapper">
-                            <Ball className='Ball'
-                            num={23}
-                            />
-                            <Ball className="Ball"
-                            num={17}
-                            />
-                    </div>
-                </div> */}
-                <section>
-                    <h1>{this.props.title}</h1>
-                    <div>
-                        {this.state.nums.map(n => <Ball num={n}/>)}
-                    </div>
-                    <button onClick={this.handleClick}>Generate</button>
-                </section>
-            </div>
+            <section className='Lottery'>
+                <h1>{this.props.title}</h1>
+                <div className="Ball-wrapper">
+                    {this.state.nums.map(n => <Ball num={n} />)}
+                </div>
+                <button className="Lottery-button" onClick={this.handleClick}>Generate</button>
+            </section>
         )
     }
 }
