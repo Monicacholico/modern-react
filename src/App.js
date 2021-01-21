@@ -9,6 +9,8 @@ import IconList from './IconList';
 import Ball from './Ball';
 import Lottery from './Lottery';
 import Coin from './Coin';
+import FlipManager from './FlipManager';
+
 
 import './App.css'
 
@@ -28,7 +30,7 @@ class App extends Component {
                 {/* <Ball num={17}/> */}
                 {/* <Lottery />
                 <Lottery title={'Mini Daily'} maxNum={40} maxBalls={4}/> */}
-                <Coin/>
+                <FlipManager />
             </div>
         )
     }

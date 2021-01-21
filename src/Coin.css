@@ -1,0 +1,21 @@
+.Coin {
+    /* padding: 2em; */
+    background-color: mediumslateblue;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    width: 3em;
+    height: 2.25em;
+    padding-top: 0.75em;
+    text-align: center;
+    margin-right: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.Coin-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 2em;
+}
