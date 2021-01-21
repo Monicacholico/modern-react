@@ -2,8 +2,8 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
 }
+
 .App-icon-wrapper {
     display: flex;
     flex-flow: row wrap;
