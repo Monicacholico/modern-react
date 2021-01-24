@@ -6,16 +6,22 @@ import './App.css'
 
 // let arrFaces = ['cara', 'cruz'];
 class FlipManager extends Component {
-    static defaulProps
+    static defaulProps = {
+    }
     state = {
-        faces : ['cara', 'cruz'],
+        currFace : null,
         numofFlips : 0,
         numofHeads : 0,
         numofTails : 0
     }
     flip = () => {
-        this.setState( curState => ({
-            faces: curState.faces.map(f => Math.floor(Math.random() * this.props.faces))
+        let twoFaces = ['cara', 'cruz'];
+        let idxFaces = Math.floor(Math.random() * twoFaces.length)
+        console.log(idxFaces);
+        let flipFaced = twoFaces[idxFaces];
+        console.log(flipFaced);
+        this.setState( ({
+            currFace: flipFaced
         }))
     }
 
@@ -23,8 +29,8 @@ class FlipManager extends Component {
     render() {
         return (
             <div className='Flip-wrapper'>
-                <Coin/>
-                <button onClick={this.flip}>Flip the coin!</button>
+            <Coin face={this.state.currFace}/>
+                <button onClick={this.flip}>Flip the Coin!</button>
             </div>
         )
     }
