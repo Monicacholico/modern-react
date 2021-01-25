@@ -20,17 +20,19 @@ class FlipManager extends Component {
         console.log(idxFaces);
         let flipFaced = twoFaces[idxFaces];
         console.log(flipFaced);
-        this.setState( ({
-            currFace: flipFaced
+        this.setState(curState => ({
+            currFace: flipFaced,
+            numofFlips: this.state.numofFlips + 1,
+            numofHeads: this.state.currFace === 'cara' ? this.state.numofHeads + 1 : this.state.numofHeads,
+            numofTails: this.state.currFace === 'cruz' ? this.state.numofTails + 1 : this.state.numofTails
         }))
     }
-
-
     render() {
         return (
             <div className='Flip-wrapper'>
             <Coin face={this.state.currFace}/>
                 <button onClick={this.flip}>Flip the Coin!</button>
+                <h3>Out of {this.state.numofFlips} there have been {this.state.numofHeads} and {this.state.numofTails}</h3>
             </div>
         )
     }
