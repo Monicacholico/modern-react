@@ -1,11 +1,12 @@
 .Coin {
     /* padding: 2em; */
+    vertical-align: middle;
     background-color: mediumslateblue;
     border-radius: 50%;
     color: white;
     display: inline-block;
-    width: 3em;
-    height: 2.25em;
+    width: 5em;
+    height: 4.25em;
     padding-top: 0.75em;
     text-align: center;
     margin-right: 0.5em;
