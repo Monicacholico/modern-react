@@ -3,6 +3,7 @@ import Coin from './Coin';
 
 
 import './App.css'
+import './Flip.css'
 
 // let arrFaces = ['cara', 'cruz'];
 class FlipManager extends Component {
@@ -31,7 +32,7 @@ class FlipManager extends Component {
         return (
             <div className='Flip-wrapper'>
             <Coin face={this.state.currFace}/>
-                <button onClick={this.flip}>Flip the Coin!</button>
+                <button className="Flip-button" onClick={this.flip}>Flip the Coin!</button>
                 <h3>Out of {this.state.numofFlips} there have been {this.state.numofHeads} and {this.state.numofTails}</h3>
             </div>
         )
