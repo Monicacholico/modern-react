@@ -10,7 +10,7 @@ class Coin extends Component {
         return (
             <section className="Coin-wrapper">
                 <div className="Coin">
-                    {this.props.face}
+                    <p className="Coin-text">{this.props.face}</p>
                 </div>
             </section>
             )

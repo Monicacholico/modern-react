@@ -5,7 +5,6 @@ import Coin from './Coin';
 import './App.css'
 import './Flip.css'
 
-// let arrFaces = ['cara', 'cruz'];
 class FlipManager extends Component {
     static defaulProps = {
     }
@@ -23,17 +22,17 @@ class FlipManager extends Component {
         console.log(flipFaced);
         this.setState(curState => ({
             currFace: flipFaced,
-            numofFlips: this.state.numofFlips + 1,
-            numofHeads: this.state.currFace === 'cara' ? this.state.numofHeads + 1 : this.state.numofHeads,
-            numofTails: this.state.currFace === 'cruz' ? this.state.numofTails + 1 : this.state.numofTails
+            numofFlips: curState.numofFlips + 1,
+            numofHeads: curState.numofHeads += (flipFaced === 'cara' ?  1 : 0),
+            numofTails: curState.numofTails += (flipFaced === 'cruz' ?  1 : 0),
         }))
     }
     render() {
         return (
             <div className='Flip-wrapper'>
-            <Coin face={this.state.currFace}/>
+                <Coin face={this.state.currFace}/>
                 <button className="Flip-button" onClick={this.flip}>Flip the Coin!</button>
-                <h3>Out of {this.state.numofFlips} there have been {this.state.numofHeads} and {this.state.numofTails}</h3>
+                <h3>Out of {this.state.numofFlips} there have been {this.state.numofHeads} heads and {this.state.numofTails} tails</h3>
             </div>
         )
     }
