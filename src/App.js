@@ -10,6 +10,7 @@ import Ball from './Ball';
 import Lottery from './Lottery';
 import Coin from './Coin';
 import FlipManager from './FlipManager';
+import BoxesContainer from './BoxesContainer';
 
 
 import './App.css'
@@ -30,7 +31,8 @@ class App extends Component {
                 {/* <Ball num={17}/> */}
                 {/* <Lottery />
                 <Lottery title={'Mini Daily'} maxNum={40} maxBalls={4}/> */}
-                <FlipManager />
+                {/* <FlipManager /> */}
+                <BoxesContainer />
             </div>
         )
     }
