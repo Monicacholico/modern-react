@@ -1,12 +1,13 @@
 .Box-Container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     text-align: center;
+    width: 100%;
 }
 
 .Box {
     height: 150px;
-    width: 150px;
+    width: calc(16% - 15px);
     /* background-color: hotpink; */
 }
 
