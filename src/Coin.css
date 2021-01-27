@@ -12,6 +12,7 @@
     margin-right: 0.5em;
     font-weight: bold;
     font-size: 1.5em;
+    box-shadow: 7px 10px 12px -5px rgba(68, 48, 48, 0.56);
 }
 
 .Coin-wrapper {

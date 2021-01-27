@@ -1,0 +1,16 @@
+.Box-Container {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+}
+
+.Box {
+    height: 150px;
+    width: 150px;
+    /* background-color: hotpink; */
+}
+
+.Title-Container {
+    padding: 2em;
+
+}
