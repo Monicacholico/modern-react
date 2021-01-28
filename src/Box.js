@@ -1,16 +1,32 @@
 import React, {Component} from 'react';
+import {choice} from './helpers';
 
 import './Box.css';
 
 class Box extends Component {
-    static defaultProps = {
-        color: {backgroundColor: 'hotpink'}
+    state = {
+        color: choice(this.props.colors)
+    }
+    pickColor = () => {
+        let newColor;
+        do{
+            newColor = choice(this.props.colors);
+            console.log(newColor)
+        } while (newColor === this.state.color)
+
+        this.setState({
+            color: newColor
+        })
+    }
+    handleClick = () => {
+        this.pickColor();
     }
     render() {
-        console.log(this.props.color);
         return (
-            <div style={this.props.color} className="Box">
-                <h2>I am a box with a changing color!!!!</h2>
+            <div
+            style={{backgroundColor: this.state.color}}
+            onClick={this.handleClick}
+            className="Box">
             </div>
         )
     }
