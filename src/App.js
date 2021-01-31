@@ -11,6 +11,7 @@ import Lottery from './Lottery';
 import Coin from './Coin';
 import FlipManager from './FlipManager';
 import BoxesContainer from './BoxesContainer';
+import WiseSquare from './WiseSquare';
 
 
 import './App.css'
@@ -27,12 +28,12 @@ class App extends Component {
                 {/* <Clicker/> */}
                 {/* <ScoreKeeper/> */}
                 {/* <IconList/> */}
-
                 {/* <Ball num={17}/> */}
                 {/* <Lottery />
                 <Lottery title={'Mini Daily'} maxNum={40} maxBalls={4}/> */}
                 {/* <FlipManager /> */}
-                <BoxesContainer />
+                {/* <BoxesContainer /> */}
+                <WiseSquare />
             </div>
         )
     }
