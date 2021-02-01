@@ -1,0 +1,10 @@
+.ButtonList {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+button {
+    margin: 3em;
+    padding: 1.5em;
+}
