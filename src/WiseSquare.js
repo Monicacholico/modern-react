@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class WiseSquare extends Component {
     dispenseWisdom() {
-        let firstMessage;
+        // let firstMessage;
         let messages = [
             "A fool thinks himself to be wise, but a wise man know himself to be a fool.",
             "Educating the mind without educating the heart is no education at all.",
@@ -10,16 +10,16 @@ class WiseSquare extends Component {
         ];
         let rIndex = Math.floor(Math.random() * messages.length);
         console.log(messages[rIndex]);
-        let theMessage = messages[rIndex];
+        // let theMessage = messages[rIndex];
     }
     
 
     render() {
         let myFunction = this.dispenseWisdom();
         return (
-            <div className="App-wrapper">
+            <div className="App-wrapper" onMouseEnter={this.dispenseWisdom}>
                 <h2>I'm here</h2>
-                {myFunction}
+                
             </div>
         )
     }

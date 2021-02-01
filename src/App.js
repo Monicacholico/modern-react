@@ -12,6 +12,9 @@ import Coin from './Coin';
 import FlipManager from './FlipManager';
 import BoxesContainer from './BoxesContainer';
 import WiseSquare from './WiseSquare';
+import AnnoyingForm from './AnnoyingForm';
+import CopyDemo from './CopyDemo';
+import ButtonList from './buttonList';
 
 
 import './App.css'
@@ -33,7 +36,10 @@ class App extends Component {
                 <Lottery title={'Mini Daily'} maxNum={40} maxBalls={4}/> */}
                 {/* <FlipManager /> */}
                 {/* <BoxesContainer /> */}
-                <WiseSquare />
+                {/* <WiseSquare />
+                <AnnoyingForm/>
+                <CopyDemo/> */}
+                <ButtonList/>
             </div>
         )
     }
